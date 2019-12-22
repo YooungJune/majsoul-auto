@@ -27,11 +27,11 @@ for i in range(2500000):
     pyautogui.moveTo(num.duanweichang)
     if (i % 50)==0:
         queding=None
-        wangluo=None
-        over=None
+      #  wangluo=None
+      #  over=None
         queding=pyautogui.locateCenterOnScreen('queding.png')
-        wangluo=pyautogui.locateCenterOnScreen('wangluo.png')
-        over=pyautogui.locateCenterOnScreen('over.png')
+       # wangluo=pyautogui.locateCenterOnScreen('wangluo.png')
+       # over=pyautogui.locateCenterOnScreen('over.png')
         if queding != None:
             pyautogui.moveTo(queding)#终局刷新网页
             time.sleep(10)
@@ -52,15 +52,15 @@ for i in range(2500000):
                 pyautogui.moveTo(num.ziliao)
                 pyautogui.click()
 
-        if wangluo != None:
-            pyautogui.moveTo(num.refresh)
-            pyautogui.click()
-            pyautogui.moveTo(num.duanweichang)
+        # if wangluo != None:
+        #     pyautogui.moveTo(num.refresh)
+        #     pyautogui.click()
+        #     pyautogui.moveTo(num.duanweichang)
 
-        if over != None:
-            pyautogui.moveTo(num.refresh)
-            pyautogui.click()
-            pyautogui.moveTo(num.duanweichang)
+        # if over != None:
+        #     pyautogui.moveTo(num.refresh)
+        #     pyautogui.click()
+        #     pyautogui.moveTo(num.duanweichang)
     
     richi=pyautogui.locateCenterOnScreen('richi.png')#能否立直牌
 
